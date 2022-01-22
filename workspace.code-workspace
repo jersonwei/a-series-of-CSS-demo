@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "..\\vue"
+		},
+		{
+			"path": "..\\JS高级"
+		},
+		{
+			"path": "D:\\就业班视频\\webapi\\webApi-04\\04-源代码"
+		},
+		{
+			"path": "..\\JS高级\\day02"
+		},
+		{
+			"path": "..\\JS高级\\搭桥游戏"
+		},
+		{
+			"path": "..\\canvas"
+		},
+		{
+			"path": "D:\\就业班视频\\jquery\\jQuery预习代码"
+		},
+		{
+			"path": "..\\WebAPI\\js题目集"
+		},
+		{
+			"path": "D:\\就业班视频\\ajax"
+		},
+		{
+			"path": "D:\\就业班视频\\可视化"
+		},
+		{
+			"path": "D:\\就业班视频\\js高级\\js高级考试"
+		},
+		{
+			"path": "D:\\就业班视频\\grid布局"
+		},
+		{
+			"path": "D:\\就业班视频\\git项目集"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "grid布局"
+	}
+}

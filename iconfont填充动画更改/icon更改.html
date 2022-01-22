@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 第一步从网站上下载svg文件到对应的文件夹中 -->
+    <!-- 注意！！1阿里巴巴图标库可以直接复制svg代码 -->
+    <!-- 第二步单独创立一个css文件设置样式并引入应用的html中 -->
+    <!-- 第三步将引入的icon font的svg文件用记事本打开将其中的代码引入创立的盒子中 -->
+    <!-- 第四步找到对应的width和height属性删除对应的属性值 -->
+    <!-- 第五步设置相应的css样式 -->
+    <!-- 第六步找到path标签设置样式 -->
+    <!-- 注意！如果图标有部分缺陷可以更改viewbox中的值调整 -->
+    <!-- 第七步利用stroke属性的dasharray和dashoffset找到消除字体图标的数字然后设置动画 -->
+    <!-- 第八步动画第一步设置0%，dashoffset为0；第二步40%dashoffset为100%；第三步dashoffset
+    设置为200% fill属性为透明；最后一步设置dashoffset为200%fill属性为填充的颜色 -->
+
+
+    <div class="container">
+        <div class="icon star">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="icon"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#333333" d="M1015.296 381.715692c-8.743385-26.466462-31.350154-45.686154-58.368-49.860923l-263.955692-40.96L578.363077 42.692923C566.311385 16.620308 540.396308 0 512.039385 0S457.767385 16.620308 445.715692 42.692923L331.027692 290.894769l-263.955692 40.96C39.975385 336.029538 17.447385 355.249231 8.704 381.715692c-8.743385 26.466462-2.126769 55.689846 17.014154 75.539692L219.096615 658.510769 174.276923 937.668923c-4.489846 28.120615 7.168 56.241231 30.011077 72.782769C216.969846 1019.431385 231.699692 1024 246.508308 1024c12.130462 0 24.418462-3.150769 35.367385-9.216l230.084923-125.085538 230.084923 125.085538C753.152 1020.849231 765.361231 1024 777.570462 1024c14.808615 0 29.538462-4.568615 42.220308-13.548308 22.843077-16.541538 34.500923-44.662154 29.932308-72.782769L804.903385 658.510769l193.457231-201.255385C1017.422769 437.326769 1023.960615 408.182154 1015.296 381.715692z" /></svg>
+        </div>
+        <div class="icon heart">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+            <svg class="icon"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="#333333" d="M703.296 115.2A295.168 295.168 0 0 0 512 202.592 295.168 295.168 0 0 0 320.704 115.2c-162.688 0-260.928 118.752-260.928 273.152C59.776 729.6 512 947.2 512 947.2s452.224-217.6 452.224-558.848c0-154.4-98.24-273.152-260.928-273.152z"  /></svg>
+        </div>
+        <div class="icon moon">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="icon"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#333333" d="M736 624A399.52 399.52 0 0 1 352.48 110.944a416 416 0 1 0 599.616 449.344A397.728 397.728 0 0 1 736 624z"  /></svg>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: pink;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    background: linear-gradient(90deg,rgb(236, 15, 144),rgb(12, 235, 97),rgb(173, 9, 238),rgb(236, 93, 10));
+    background-size: 400%;
+    z-index: 1;
+}
+a span
+{
+    animation: animateText 3s linear infinite;
+    animation-delay: calc(0.1s *var(--i));
+}
+@keyframes animateText
+{
+    0%
+    {
+        color: #fff;
+        filter: hue-rotate(0deg);
+        text-shadow: 0 0 5px rgb(13, 159, 243),
+        0 0 15px rgb(13, 159, 243),
+        0 0 25px rgb(13, 159, 243),
+        0 0 40px rgb(13, 159, 243);
+    }
+    30%
+    {
+        color: rgb(155, 148, 148);
+        filter: blur(0.2px) hue-rotate(180deg);
+        text-shadow: 0 0 5px rgb(66, 199, 73),
+        0 0 15px rgb(66, 199, 73),
+        0 0 25px rgb(66, 199, 73),
+        0 0 40px rgb(66, 199, 73);
+    }
+    70%
+    {
+        color: #eee;
+        filter: blur(0.5px) hue-rotate(360deg);
+        text-shadow: 0 0 5px rgb(211, 56, 102),
+        0 0 15px rgb(211, 56, 102),
+        0 0 25px rgb(211, 56, 102),
+        0 0 40px rgb(211, 56, 102); 
+    }
+    100%
+    {
+        color: transparent;
+        filter: hue-rotate(0deg);
+        text-shadow: none;
+    }
+}
+a::before
+{   
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    background: linear-gradient(90deg,rgb(236, 15, 144),rgb(12, 235, 97),rgb(173, 9, 238),rgb(236, 93, 10));
+    background-size: 400%;
+    border-radius: 20px;
+    z-index: -1;
+    filter: blur(20px);
+}
+a:hover
+{
+    animation: sun 4s infinite;
+}
+a:hover::before
+{
+    animation: sun 4s infinite;
+}
+
+@keyframes sun
+{
+    100%
+    {
+        background-position: -400% 0;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #262626;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    -webkit-box-reflect: below 1px 
+    linear-gradient(transparent,transparent,transparent,#004);
+}
+
+.container .box
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #2da2ff 25%,
+    #444 25%, #444 50%, #2da2ff 50%,
+    #2da2ff 75%, #444 75%, #444 100%);
+    background-size:  40px 40px;
+    filter: grayscale(1);
+    animation: animateBg 0.5s linear infinite;
+    animation-play-state: paused;
+    transition: filter 1s;
+}
+
+.container .box:nth-child(2)
+{
+    background: linear-gradient(135deg, #ff612e 25%,
+    #444 25%, #444 50%, #ff612e 50%,
+    #ff6123 75%, #444 75%, #444 100%);
+    background-size: 40px 40px;
+}
+
+.container .box img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 90%;
+    border-radius: 20px 20px 0 0;
+    transition: height 0.5s;
+}
+@keyframes animateBg
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 40px;
+    }
+}
+
+.container .box:hover 
+{
+    animation-play-state: running;
+    filter: grayscale(0);
+
+}
+
+.container .box:hover img 
+{
+    height: 420px;
+}
